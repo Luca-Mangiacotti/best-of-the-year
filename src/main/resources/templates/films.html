@@ -13,9 +13,9 @@
   </head>
   <body>
     <header><h1>Pagina dei film</h1></header>
-    <main>
+    <main class="mx-auto text-center">
       <h1>Lista Film</h1>
-      <a th:href="@{/}" class="btn btn-primary">Torna alla Home</a>
+      <a th:href="@{/}" class="btn btn-primary mt-1 mb-3">Torna alla Home</a>
 
       <ul class="list-group">
         <li class="list-group-item" th:each="item : ${list}">
