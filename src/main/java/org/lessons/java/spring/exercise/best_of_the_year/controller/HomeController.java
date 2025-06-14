@@ -16,23 +16,16 @@ public class HomeController {
         return "index";
     }
 
-    // @GetMapping("/saluti")
-    // public String Saluti(Model model, @RequestParam(name = "name") String name) {
-    // final String formattedName = name.substring(0, 1).toUpperCase()
-    // + name.substring(1, name.length()).toLowerCase();
-    // model.addAttribute("name", formattedName);
-    // model.addAttribute("time", LocalTime.now());
-    // model.addAttribute("email", name + "@gmail.com");
-    // return "saluti";
-    // }
+    @GetMapping("/films")
+    public String goMovies() {
 
-    // @GetMapping("/colore")
-    // public String Colore(Model model, @RequestParam(name = "color") String color)
-    // {
+        return "films";
+    }
 
-    // model.addAttribute("color", color);
+    @GetMapping("/songs")
+    public String goSongs() {
 
-    // return "colore";
-    // }
+        return "songs";
+    }
 
 }
