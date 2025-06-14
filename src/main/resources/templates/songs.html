@@ -16,6 +16,14 @@
     <main>
       <h1>Lista Canzoni</h1>
       <a th:href="@{/}" class="btn btn-primary">Torna alla Home</a>
+      <ul class="list-group">
+        <li class="list-group-item" th:each="item : ${list}">
+          <a
+            th:href="@{/songs/{songId}(songId = ${item.id})}"
+            th:text="${item.title}"
+          ></a>
+        </li>
+      </ul>
     </main>
     <footer></footer>
   </body>
