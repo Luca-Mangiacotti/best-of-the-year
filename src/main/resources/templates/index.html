@@ -13,10 +13,25 @@
       <h1 th:text="'Best of the year by: ' + ${name}"></h1>
       <div class="container row mx-auto text-center pt-5">
         <div class="col-6">
-          <a th:href="@{/films}" class="btn btn-primary">Vai ai film</a>
+          <img
+            alt="film"
+            th:src="@{/img/movie.jpg}"
+            class="logo rounded-pill"
+          />
+
+          <a th:href="@{/films}" class="btn btn-secondary rounded-pill"
+            >Vai ai film</a
+          >
         </div>
         <div class="col-6">
-          <a th:href="@{/songs}" class="btn btn-primary">Vai alle canzoni</a>
+          <img
+            alt="music"
+            th:src="@{/img/music.jpg}"
+            class="logo rounded-pill"
+          />
+          <a th:href="@{/songs}" class="btn btn-secondary rounded-pill"
+            >Vai alle canzoni</a
+          >
         </div>
       </div>
     </main>
