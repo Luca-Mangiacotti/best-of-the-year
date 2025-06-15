@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- blocco per lo stile -->
+    <th:block th:fragment="Style">
+      <!-- Bootstrap for thymeleaf -->
+      <link
+        th:href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}"
+        rel="stylesheet"
+      />
+      <!-- Foglio stile -->
+      <link rel="stylesheet" th:href="@{css/AppCss.css}" />
+    </th:block>
+
+    <!-- Blocco per header -->
+    <th:block th:fragment="header">
+      <header class="d-flex align-items-center justify-content-between px-5">
+        <img alt="logo" th:src="@{/img/logo.png}" class="logo" />
+        <nav>
+          <a th:href="@{/}" class="btn rounded-pill border-black hov">Home</a>
+          <a th:href="@{/films}" class="btn rounded-pill border-black hov"
+            >Film</a
+          >
+          <a th:href="@{/songs}" class="btn rounded-pill border-black hov"
+            >Musica</a
+          >
+        </nav>
+      </header>
+    </th:block>
+  </body>
+</html>

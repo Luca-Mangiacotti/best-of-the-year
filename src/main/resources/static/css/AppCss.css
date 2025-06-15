@@ -1,0 +1,12 @@
+header {
+  background-color: #f1efec;
+}
+
+.logo {
+  max-width: 5%;
+}
+
+/* hover per bottoni nav */
+.hov:hover {
+  background-color: white;
+}
