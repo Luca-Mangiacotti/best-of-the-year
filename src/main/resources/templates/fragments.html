@@ -14,12 +14,14 @@
         rel="stylesheet"
       />
       <!-- Foglio stile -->
-      <link rel="stylesheet" th:href="@{css/AppCss.css}" />
+      <link rel="stylesheet" th:href="@{/css/AppCss.css}" />
     </th:block>
 
     <!-- Blocco per header -->
     <th:block th:fragment="header">
-      <header class="d-flex align-items-center justify-content-between px-5">
+      <header
+        class="d-flex align-items-center justify-content-between px-5 rounded-bottom"
+      >
         <img alt="logo" th:src="@{/img/logo.png}" class="logo" />
         <nav>
           <a th:href="@{/}" class="btn rounded-pill border-black hov">Home</a>
